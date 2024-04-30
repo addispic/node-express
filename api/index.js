@@ -9,6 +9,10 @@ const app = express()
 // port
 const PORT = process.env.PORT || 5000
 
+// settings
+app.use(express.json())
+app.use(express.urlencoded({extended: true}))
+
 app.listen(5000, async () => {
     await dbHandler()
     console.log('listening')
