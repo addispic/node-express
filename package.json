@@ -4,7 +4,7 @@
   "description": "'node-express apis'",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "server": "nodemon api/index.js"
   },
   "author": "addispic",
   "license": "ISC",
