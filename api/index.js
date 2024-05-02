@@ -1,5 +1,6 @@
 require('dotenv').config()
 const express = require('express')
+const cookieParser = require('cookie-parser')
 
 // db
 const dbConnection = require('./db/dbConnection')
@@ -13,6 +14,7 @@ const PORT = process.env.PORT || 5000
 // settings
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
+app.use(cookieParser())
 
 
 // listening
